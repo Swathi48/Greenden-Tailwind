@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden</title>
+    <!--TailwindCSS CDN Link-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+<!--Responsive Navbar-->
+    
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">Greenden</h1>
+              
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg> 
+          
+
+        <ul class=" gap-5  text-gray-600 hidden md:flex ">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html"> Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Product</a>
+            </li>
+
+            <li> 
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+      
+
+    </nav> 
+
+<!--Side Navbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width:50%; height:100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p id = "closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class=" flex gap-10 flex-col items-center ">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html"> Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Product</a>
+            </li>
+
+            <li> 
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+     
+    <!--Header Section-->
+    <section class="bg-green-100 p-4 md:p-10 flex justify-center ">
+        <div >
+            <p class="mb-4">We offer you a wide range of Artificial and Natural Flowers</p>
+            <h2 class="font-bold text-3xl md:text-5xl mb-5">Plants for your Interior</h2>
+            <div>
+                <button class="bg-black rounded p-2 text-white">
+                    Shop Now
+                </button>
+                <button class="border border-black rounded  p-2">
+                    Watch video
+                </button>
+            </div>
+    
+            <p class="mt-5">160+ Plant Species | 100+ Clientz</p>
+        </div>
+        <div class="hidden md:block p-5">
+            <img src="./images/header-image.webp" alt="Header Image" class="w-80">
+        </div>
+     
+    </section>   
+
+     <!-- About section -->
+     <div class="text-center">
+        <h1 class="font-sans font-bold text-3xl">About us</h1>
+        <p>This site for those who admire and beauty and harmony of nature</p>
+        <div class="md:flex">
+            <div class="border border-black p-2 m-6 flex flex-col items-center justify-center">
+                <img src="./images/menu-board-svgrepo-com.svg" alt="" class="w-20">
+                <h2 class="font-medium text-2xl">Large Assortment</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex vel neque incidunt voluptas similique, ratione molestiae, numquam unde esse, itaque autem. Assumenda aut tenetur, excepturi iure voluptatem aperiam ipsum eum.</p>
+            </div>
+            <div class="border border-black p-2 m-6 flex flex-col items-center justify-center">
+                <img src="./images/round-arrow-1-svgrepo-com.svg" alt=""  class="w-20">
+                <h2 class="font-medium text-2xl">Free and Fast Shipping</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex vel neque incidunt voluptas similique, ratione molestiae, numquam unde esse, itaque autem. Assumenda aut tenetur, excepturi iure voluptatem aperiam ipsum eum.</p>
+            </div>
+            <div class="border border-black p-2 m-6 flex flex-col items-center justify-center">
+                <img src="./images/phone-incoming-svgrepo-com.svg" alt="" class="w-20">
+                <h2 class="font-medium text-2xl">24/7 Support</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex vel neque incidunt voluptas similique, ratione molestiae, numquam unde esse, itaque autem. Assumenda aut tenetur, excepturi iure voluptatem aperiam ipsum eum.</p>
+            </div>
+        </div>
+      </div>
+
+      <!--Best Seller-->
+      <section class="p-4 text-center">
+        <h1 class="font-bold mt-5 text-3xl">Best Seller</h1>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div >
+                <img src="./images/Bestseller_1.jpg" class="inline hover:shadow-xl transform hover:translate-y-1">
+                <h1>Rose Plant</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Bestseller_2.jpg" class="inline hover:shadow-xl transform hover:translate-y-1">
+                <h1>Lavender Plant</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Bestseller_3.jpg" class="inline hover:shadow-xl transform hover:translate-y-1">
+                <h1>Snake Plant</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Bestseller_4.jpg" class="inline hover:shadow-xl transform hover:translate-y-1">
+                <h1>Spider Plant</h1>
+                <p>$20</p>
+            </div>
+        </div>
+
+      </section>
+
+       <!--Customer Review-->
+    <section>
+        <h1 class="text-3xl font-bold mt-5 text-center">Customer Reviews</h1>
+        <div class="flex flex-col gap-5 justify-center text-white m-5">
+            <div class="bg-green-900 p-5 container">
+                <p>GreenDen Plant Shop is a delightful haven for plant enthusiasts, offering a wide variety of indoor and outdoor plants. </p>
+                <p class="text-yellow-300 font-bold ">John</p>
+            </div>
+            <div class="bg-green-900 p-5 container">
+                <p>GreenDen boasts an impressive selection of plants, catering to both seasoned plant lovers and beginners.</p> 
+                <p class="text-yellow-300 font-bold">Steve</p>
+            </div>
+            <div class="bg-green-900 p-5 container">
+                <p>The quality of the plants at GreenDen is exceptional. Every plant I saw was healthy, vibrant, and well-cared for, with no signs of pests or disease.</p> 
+                <p class="text-yellow-300 font-bold">Martin</p>
+            </div>
+        </div>
+    </section>
+    <!--News letter-->
+    <section class="text-center">
+        <h1 class="text-3xl font-bold mt-5 text-center">Join our News Letter</h1>
+        <p>Signup for email newspaper to get exclusive discounts,updates and more,.</p>
+        <input type="text" class="border border-black p-2 m-2 " style="width:80%"><br>
+        <button class="bg-black text-white p-2 m-1 rounded-md underline ">Subscribe</button>
+
+    </section>
+    <!--Footer-->
+    <section class="bg-green-100 p-10 flex flex-col gap-5">
+        <h1 class="text-4xl font-bold">Greenden</h1>
+        <p>The Standard chunk of Lorem used since the 1500s is reproduced below for those interest</p>
+        <p>&copy; 2021 Greenday.com</p>
+
+    </section>
+    
+
+    <script src="index.js"></script>
+
+
+      
+</body>
+</html>
